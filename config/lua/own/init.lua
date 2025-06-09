@@ -1,0 +1,6 @@
+require('own.opt')
+require('own.tabs')
+require('own.font')
+require('own.remap')
+require('own.plugins')
+require('own.neovide')

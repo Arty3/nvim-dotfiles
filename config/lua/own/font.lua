@@ -1,0 +1,1 @@
+vim.o.guifont = "Cascadia Mono:h16"
