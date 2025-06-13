@@ -21,7 +21,7 @@ with WSL.
 ![cpp.png](./images/cpp.png) |
 | <b>Python</b> |
 | ![python.png](./images/python.png) |
-| <b>Rust + C#</b> |
+| <b>Rust & C#</b> |
 | ![rust_cs.png](./images/rust_cs.png) |
 
 <h6 align="center"><em>Background is translucent, my wallpaper is just black</em></h6>
