@@ -8,28 +8,21 @@ After using vscode all my life, I decided it's finally time to move to neovim.
 This is my setup and configuration for Windows using [neovide](https://neovide.dev/), which gives me a much nicer experience on native Windows by integrating
 with WSL.
 
-## 🎨 Theme
-
-<div align="left">
-	<a href="https://github.com/rebelot/kanagawa.nvim">
-		<img src="images/kanagawa.png" alt="Kanagawa Theme" width="30%" align="left" hspace="20">
-	</a>
-	<div align="left" valign="middle">
-		<br><br><br>
-		<h2>+ Custom Theming</h2>
-	</div>
-	<br clear="all">
-</div>
-
 ## ✨ Showcase
 
-| Main Menu | Fuzzy Finder |
-|:---------:|:------------:|
-| ![menu.png](./images/menu.png) | ![fuzzy_finder.png](./images/fuzzy_finder.png) |
-| <b>C</b> | <b>C++</b> |
-| ![c.png](./images/c.png) | ![cpp.png](./images/cpp.png) |
-| <b>Python</b> | <b>Rust + C#</b> |
-| ![python.png](./images/python.png) | ![rust_cs.png](./images/rust_cs.png) |
+| Main Menu |
+|:---------:|
+| ![menu.png](./images/menu.png) |
+| <b>Fuzzy Finder</b> |
+| ![fuzzy_finder.png](./images/fuzzy_finder.png) |
+| <b>C</b> |
+| ![c.png](./images/c.png) |
+| <b>C++</b> |
+![cpp.png](./images/cpp.png) |
+| <b>Python</b> |
+| ![python.png](./images/python.png) |
+| <b>Rust + C#</b> |
+| ![rust_cs.png](./images/rust_cs.png) |
 
 <h6 align="center"><em>Background is translucent, my wallpaper is just black</em></h6>
 
@@ -81,7 +74,7 @@ Where each project is categorized by language.
 
 ### Custom Theming
 
-I didn't like how plugins auto adapted to the kanagawa theme,
+I didn't like how plugins auto adapted to the [kanagawa](https://github.com/rebelot/kanagawa.nvim) theme,
 so there is extensive retheming for these components, using the kanagawa palette.
 Incase you want to switch color theme, consider removing these.
 
@@ -93,9 +86,9 @@ a problematic section:
 ```lua
 -- Keep as this due to really odd rendering
 -- bug with emojis and unicode chars
-selection_caret	= "➜  ",
-prompt_prefix	= " ▶ ",
-multi_icon		= "✓",
+selection_caret = "➜  ",
+prompt_prefix   = " ▶ ",
+multi_icon      = "✓",
 ```
 
 There is a weird bug in neovim, likely some kind of unicode character rendering issue, where telescope's folder emoji is rendered as a weird unicode character
