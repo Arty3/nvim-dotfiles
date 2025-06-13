@@ -44,8 +44,6 @@ vim.opt.clipboard		= "unnamedplus"
 vim.opt.updatetime		= 250
 vim.opt.timeoutlen		= 300
 
--- Show subtle line at column 80
-vim.opt.colorcolumn		= "80"
 -- Disable action column (git, breakponts, etc.)
 vim.opt.signcolumn		= "no"
 

@@ -2,15 +2,19 @@ local lsp_zero = require('lsp-zero')
 
 lsp_zero.on_attach(function(client, bufnr)
 	lsp_zero.default_keymaps({buffer = bufnr})
+
+	if client.server_capabilities.semanticTokensProvider then
+		vim.lsp.semantic_tokens.start(bufnr, client.id)
+	end
 end)
 
 local cmp = require('cmp')
 
 cmp.setup({
-	-- Enable except for C/C++
+	-- Enable except for C
 	enabled = function()
 		local ft = vim.bo.filetype
-		if ft == "c" or ft == "cpp" then
+		if ft == "c" then
 			return false
 		end
 		return true

@@ -25,7 +25,8 @@ require('pckr').add{
 		}
 	};
 
-	'sainnhe/sonokai';
+	-- Color theme
+	'rebelot/kanagawa.nvim';
 
 	{
 		'nvim-treesitter/nvim-treesitter',

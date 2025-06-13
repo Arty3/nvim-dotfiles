@@ -1,5 +1,4 @@
 if vim.g.neovide then
-	-- (0.0 = fully transparent, 1.0 = fully opaque)
 	vim.g.neovide_opacity						= 0.8
 	vim.g.neovide_window_blurred				= true
 
